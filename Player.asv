@@ -6,9 +6,7 @@ classdef Player < handle
         velocity = [0 0];   
         position = [0 150];  
         speed = 10;
-        jump = 1;
         isJumping = false;   
-        gravity = 50;
     end
     
     methods
@@ -32,6 +30,7 @@ classdef Player < handle
                     obj.direction(3) = logic_var;
                 case "U"
                     obj.direction(1) = logic_var;
+                    obj.isJumping = true;
                 case "D"
                     obj.direction(2) = logic_var;
             end
@@ -40,12 +39,9 @@ classdef Player < handle
         function obj = updatePlayerData(obj, dt, ground)
 
             %set speed based on keyboard input
-            obj.velocity(1) = 0;
+            obj.velocity = [0 0];
             if obj.direction(1)
-                if ~obj.isJumping
-                    obj.velocity(2) = obj.jump;
-                    obj.isJumping = true;
-                end
+            obj.velocity(2) = obj.speed;
             elseif obj.direction(2)
             obj.velocity(2) = -obj.speed;
             elseif obj.direction(3)
@@ -53,8 +49,6 @@ classdef Player < handle
             elseif obj.direction(4)
             obj.velocity(1) = obj.speed;
             end
-
-            obj.acceleration = obj.acceleration + [0 -obj.gravity];
 
             obj.velocity = obj.velocity + dt * obj.acceleration;
             obj.position = obj.position + dt * obj.velocity;
