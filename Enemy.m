@@ -12,7 +12,7 @@ classdef Enemy < handle
         function obj = init(obj,ground)
             obj.direction = [false false]; % [LEFT, RIGHT]
             obj.length = 30;
-            obj.position = [100 ground(100)]; 
+            obj.position = [500 ground(100)]; 
             obj.acceleration = [0 0]; 
             obj.velocity = [0 0]; 
             obj.a = 50;

@@ -9,7 +9,7 @@ classdef Game < handle
     
     methods
         function obj = init(obj) 
-            obj.ground = @(x) 20*sin(x/100);
+            obj.ground = @(x) 20*sin(3*x/100);
             obj.boardSize = [-500 500 -50 500];
             obj.time_previous = posixtime(datetime('now'));
             obj.player = Player(); 
@@ -42,7 +42,7 @@ classdef Game < handle
 
         function visualizeData(obj)
             cla; 
-            
+            grid on;
             obj.player.visualizePlayer();   % Plot player
             obj.enemy.visualizeEnemy();     % Plot enemy
             fplot(obj.ground, "LineStyle", "-");

@@ -10,7 +10,7 @@ clock_init = posixtime(datetime('now'));
 clock = posixtime(datetime('now'));
 hold on;
 
-while clock - clock_init < 60.0
+while clock - clock_init < 100.0
     clock = posixtime(datetime('now'));
     game.updateData();
     game.visualizeData();
@@ -48,7 +48,7 @@ function keyReleaseHandler(event, game)
             game.player.button("R", "Released");
         case 'leftarrow'
             game.player.button("L", "Released");
-        case 'uparrow'
+        case 'uparrow'                                                                                        
             game.player.button("U", "Released");
         case 'downarrow'
             game.player.button("D", "Released");
