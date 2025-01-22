@@ -21,23 +21,6 @@ Welcome to the **MATLAB Game** repository! This project is a game developed enti
 - **`LICENSE`**: License file under GPL-3.0.
 - **`README.md`**: This documentation file.
 
-## Contributions
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add YourFeature"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature/YourFeature
-   ```
-5. Open a Pull Request.
-
 ## License
 This project is licensed under the GPL-3.0 License. See the [LICENSE](LICENSE) file for details.
 
