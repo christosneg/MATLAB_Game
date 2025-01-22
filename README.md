@@ -11,26 +11,6 @@ Welcome to the **MATLAB Game** repository! This project is a game developed enti
 
 ### Prerequisites
 - MATLAB R2020b or later.
-- Basic understanding of MATLAB programming.
-
-### Installation
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/christosneg/MATLAB_Game.git
-   ```
-2. Navigate to the repository directory:
-   ```bash
-   cd MATLAB_Game
-   ```
-3. Open MATLAB and set the repository directory as your current working directory.
-
-### Running the Game
-1. Launch MATLAB.
-2. Open the `MatLab_Game.m` script.
-3. Run the script by pressing **Run** or typing the following in the MATLAB Command Window:
-   ```matlab
-   MatLab_Game
-   ```
 
 ## File Structure
 - **`MatLab_Game.m`**: The main script to start the game.
