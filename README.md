@@ -24,11 +24,4 @@ Welcome to the **MATLAB Game** repository! This project is a game developed enti
 ## License
 This project is licensed under the GPL-3.0 License. See the [LICENSE](LICENSE) file for details.
 
-## Contact
-For any inquiries or suggestions, feel free to reach out to the repository owner:
-- **GitHub**: [christosneg](https://github.com/christosneg)
-
----
-
-Happy gaming!
 
